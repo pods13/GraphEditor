@@ -1,0 +1,45 @@
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: #979797;
+}
+
+.right-panel {
+    -fx-background-color: #383838;
+}
+
+.left-panel {
+    -fx-background-color: #3C3F41;
+}
+
+.menu-bar {
+    -fx-background-color: #2E2E2E;
+}
+
+.menu:hover, .menu:showing {
+    -fx-background-color: #4B6EAF;
+}
+
+.context-menu {
+    -fx-background-color: #2E2E2E;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused {
+    -fx-background-color: #4B6EAF;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #2E2E2E;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    /*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.*?>
+<fx:root fx:id="root_pane" stylesheets="@../css/modena.css" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" styleClass="root-pane">
+    <children>
+
+        <SplitPane fx:id="base_pane" dividerPositions="0.5" focusTraversable="false" styleClass="base-pane"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <items>
+                <VBox fx:id="left_pane" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50" spacing="10.0"
+                      styleClass="left-pane">
+                    <padding>
+                        <Insets left="5" right="5" top="60"/>
+                    </padding>
+                </VBox>
+                <TabPane fx:id="graphTab" styleClass="tabs"/>
+            </items>
+        </SplitPane>
+    </children>
+</fx:root>

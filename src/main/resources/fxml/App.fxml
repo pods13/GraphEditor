@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.un1acker.grapheditor.view.pane.RootLayout?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.glyphfont.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0"
+            prefHeight="600.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.un1acker.grapheditor.controller.AppController" stylesheets="@../css/modena.css">
+    <top>
+        <AnchorPane prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: #343746;"
+                    visible="true">
+            <Button fx:id="newGraph" styleClass="btn" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="FILE"/>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="New Graph"/>
+                </tooltip>
+            </Button>
+
+            <Button fx:id="openGraph" styleClass="btn" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="60">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="FOLDER_OPEN"/>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Open directory with graph files"/>
+                </tooltip>
+            </Button>
+            <Button fx:id="saveGraph" styleClass="btn" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="100">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="SAVE"/>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Save Graph"/>
+                </tooltip>
+            </Button>
+
+            <Button fx:id="kodres" styleClass="btn" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="140">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="SHARE_ALT"/>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Run Kodres Algorithm"/>
+                </tooltip>
+            </Button>
+
+            <Button fx:id="about" styleClass="btn" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="180">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="INFO_CIRCLE"/>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="About application"/>
+                </tooltip>
+            </Button>
+        </AnchorPane>
+    </top>
+    <left>
+        <TabPane side="LEFT" maxWidth="-Infinity" minWidth="-Infinity"
+                 prefWidth="212" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Project">
+                    <TreeView fx:id="fileTreeView" editable="true"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </left>
+    <center>
+        <RootLayout fx:id="rootLayout"/>
+    </center>
+</BorderPane>

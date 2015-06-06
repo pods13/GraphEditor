@@ -1,0 +1,34 @@
+.decoration-button-menu {
+    -fx-background-image: null;
+}
+
+.decoration-button-menu:hover {
+    -fx-background-image: null;
+}
+
+.undecorator-label-titlebar {
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+}
+
+.decoration-button-resize {
+    -fx-background-image: null;
+}
+
+.error-ok-button {
+    -fx-background-color: #ea2b4a;
+}
+
+.error-ok-button:hover {
+    -fx-effect: dropshadow(one-pass-box, #ea2b4a, 10, 0.3, 0, 0);
+}
+
+.decoration-button-close {
+    -fx-background-image: url("/images/errorDialog/close.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.decoration-button-close:hover {
+    -fx-background-image: url("/images/errorDialog/close-hover.png");
+    -fx-background-repeat: no-repeat;
+}

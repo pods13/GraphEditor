@@ -1,0 +1,61 @@
+Label {
+    -fx-text-fill: white;
+    -fx-label-padding: 0,0,0,0;
+    -fx-min-width: 50;
+    -fx-alignment: center;
+}
+
+
+#btn {
+    -fx-background-color: #FAFAFA;
+    -fx-background-radius: 20;
+    -fx-text-fill: dimgray;
+    -fx-alignment: center;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-max-height: 30;
+    -fx-max-width: 30;
+}
+
+#btnT {
+    -fx-background-color: #FAFAFA;
+    -fx-background-radius: 20;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-max-height: 30;
+    -fx-max-width: 30;
+}
+
+
+#btn:hover {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(one-pass-box, white, 10, 0.3, 0, 0);
+}
+
+#btnT:hover {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(one-pass-box, white, 10, 0.3, 0, 0);
+}
+
+#btn FontAwesomeIcon {
+    -fx-fill: dimgray;
+}
+
+#btnT Label{
+    -fx-max-width: 10;
+    -fx-text-fill: dimgray;
+    -fx-font-size: 9px;
+    -fx-font-weight: 900;
+    -fx-label-padding: 0,0,0,0;
+    -fx-alignment: center;
+}
+
+#btn:hover FontAwesomeIcon {
+    -fx-fill: brown;
+    -fx-effect: dropshadow(one-pass-box, burlywood, 10, 0.3, 0, 0);
+}
+
+#btnT:hover Label{
+    -fx-text-fill: brown;
+    -fx-effect: dropshadow(one-pass-box, burlywood, 10, 0.3, 0, 0);
+}

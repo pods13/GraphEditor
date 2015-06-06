@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="70.0" prefWidth="70.0" stylesheets="@../css/nodestyle.css"
+         type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane styleClass="node-overlay">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="5.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="close_button" alignment="TOP_RIGHT" text="X" textFill="WHITE"
+                               GridPane.columnIndex="1">
+                            <padding>
+                                <Insets right="5.0"/>
+                            </padding>
+                        </Label>
+                        <Label fx:id="title_bar" text="Label" textFill="WHITE">
+                            <padding>
+                                <Insets left="10.0"/>
+                            </padding>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </GridPane>
+                <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" styleClass="bottom-part">
+                    <children>
+                        <AnchorPane fx:id="left_link_handle" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="29.0"
+                                    styleClass="left-link-handle"/>
+                        <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0"/>
+                        <AnchorPane fx:id="right_link_handle" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="29.0"
+                                    styleClass="right-link-node"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

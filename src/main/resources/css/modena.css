@@ -1,0 +1,57 @@
+
+.tabs {
+    -fx-background-color: #f3f4f6;
+}
+
+.tab-pane .tab {
+    -fx-background-color: white;
+
+}
+
+.tabs .tab-header-area .tab-header-background {
+    -fx-background-color: #e1e1e1;
+}
+
+.left-pane {
+    -fx-background-color: #e1e1e1;
+}
+
+.base-pane {
+    -fx-background-color: #e1e1e1;
+}
+
+.base-pane *.split-pane-divider {
+    -fx-padding: 0;
+}
+
+.contentPane {
+    -fx-background-color: white;
+}
+
+.zoomFX {
+    -fx-border-color: white;
+}
+
+.btn {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: dimgray;
+    -fx-alignment: center;
+}
+
+.btn:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-effect: dropshadow(one-pass-box, white, 10, 0.3, 0, 0);
+}
+
+.btn FontAwesomeIcon {
+    -fx-fill: dimgray;
+}
+
+.decoration-button-menu{
+    -fx-background-image: null;
+}
+
+.decoration-button-menu:hover{
+    -fx-background-image: null;
+}
+

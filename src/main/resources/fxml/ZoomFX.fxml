@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.un1acker.grapheditor.view.tabs.ZoomFX?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.glyphfont.Glyph?>
+<fx:root fx:id="root_pane" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/modena.css">
+
+
+    <ZoomFX fx:id="zoomFX" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0"
+            AnchorPane.bottomAnchor="0" styleClass="zoomFX">
+
+        <AnchorPane fx:id="content"  styleClass="contentPane" prefHeight="1000" prefWidth="2000"/>
+
+    </ZoomFX>
+
+    <VBox stylesheets="@../css/main.css" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="0"
+          AnchorPane.bottomAnchor="0" alignment="CENTER_RIGHT">
+        <VBox spacing="15" alignment="TOP_CENTER" prefWidth="40" id="box" style="-fx-background-color: #00000077">
+            <padding>
+                <Insets top="10" right="5" bottom="10" left="5"/>
+            </padding>
+            <Button fx:id="actualSize" id="btnT">
+                <graphic>
+                    <Label text="1:1"/>
+                </graphic>
+            </Button>
+
+            <Button fx:id="zoomIn" id="btn">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="SEARCH_PLUS"/>
+                </graphic>
+            </Button>
+
+            <Button fx:id="zoomOut" id="btn">
+                <graphic>
+                    <Glyph fontFamily="FontAwesome" icon="SEARCH_MINUS"/>
+                </graphic>
+            </Button>
+            <Label fx:id="zoomFactor" text="100%"/>
+        </VBox>
+    </VBox>
+
+
+</fx:root>

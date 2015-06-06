@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.un1acker.graphEditor</groupId>
+    <artifactId>graphEditor</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <dejv-commons.version>1.1.0</dejv-commons.version>
+        <spring.version>4.0.4.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.zenjava</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.2.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.20.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.dejv78.commons.jfx</groupId>
+            <artifactId>jfx-binding</artifactId>
+            <version>${dejv-commons.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.dejv78.commons.jfx</groupId>
+            <artifactId>jfx-geometry</artifactId>
+            <version>${dejv-commons.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.dejv78.commons.jfx</groupId>
+            <artifactId>jfx-input</artifactId>
+            <version>${dejv-commons.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.dejv78.commons.config</groupId>
+            <artifactId>config</artifactId>
+            <version>${dejv-commons.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.dejv78.commons.config</groupId>
+            <artifactId>config-json</artifactId>
+            <version>${dejv-commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.un1acker.undecorator</groupId>
+            <artifactId>undecorator</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/Undecorator.jar</systemPath>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>2.0</version>
+                <configuration>
+                    <mainClass>com.un1acker.grapheditor.view.App</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

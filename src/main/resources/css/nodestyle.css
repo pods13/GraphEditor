@@ -1,0 +1,83 @@
+.icon-node {
+    -fx-background-color: #10aded;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-image: url(../images/nodeicons/node_left_panel.png);
+    -fx-background-size: 60% 55%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 40% 80%;
+}
+
+.icon-global {
+    -fx-background-color: #d9ede2;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-image: url(../images/nodeicons/global_node_left_panel.png);
+    -fx-background-size: 75% 65%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 55% 80%;
+}
+
+.icon-joint {
+    -fx-background-color: #76c5d4;
+    -fx-background-radius: 10;
+    -fx-background-image: url(../images/nodeicons/joint_node_left_panel.png);
+    -fx-background-size: 70% 65%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: bottom;
+}
+
+.icon-joint-panel {
+    -fx-background-color: #76c5d4;
+    -fx-background-radius: 5;
+    -fx-background-image: url(../images/nodeicons/joint_node_left_panel.png);
+    -fx-background-size: 70% 65%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 40% 50%;
+    -fx-border-color: #343746;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+}
+
+.icon-node-panel {
+    -fx-background-color: #10aded;
+    -fx-background-radius: 5;
+    -fx-background-image: url(../images/nodeicons/node_left_panel.png);
+    -fx-background-size: 70% 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 40% 50%;
+    -fx-border-color: #343746;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+}
+
+.icon-global-panel {
+    -fx-background-color: #d9ede2;
+    -fx-background-radius: 5;
+    -fx-background-image: url(../images/nodeicons/global_node_left_panel.png);
+    -fx-background-size: 70% 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 40% 50%;
+    -fx-border-color: #343746;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+}
+
+.node-overlay {
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-color: #343746;
+}
+
+.right-link-node:hover {
+    /*-fx-background-radius: 0 0 10 0;*/
+    /*-fx-background-color: rgba(255, 255, 255, 0.35);*/
+}
+
+.left-link-handle:hover {
+    /*-fx-background-radius: 0 0 0 10;*/
+    /*-fx-background-color: rgba(255, 255, 255, 0.35);*/
+}
+
+.bottom-part {
+    -fx-border-color: #343746;
+    -fx-border-width: 0px 1px 1px 1px;
+    -fx-border-radius: 0 0 10 10;
+}
